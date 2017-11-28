@@ -5,7 +5,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.io.IOException;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
 /**
@@ -13,29 +15,28 @@ import java.util.logging.Logger;
  */
 public class CreateAnAccount {
     WebDriver driver;
-    final static Logger logger = Logger.getLogger(CreateAnAccount.class.getName());
+    static Logger logger = Logger.getLogger(CreateAnAccount.class.getName());
 
 
-    By createAccountErrorMsg = By.xpath(".//*[@id='create_account_error']/ol/li");
+    public By createAccountErrorMsg = By.xpath(".//*[@id='create_account_error']/ol/li");
     public By mrRadioButton = By.xpath(".//*[@id='id_gender1']");
-    By mrsRadioButton = By.xpath("./*//*[@id='id_gender2']");
-    By firstName = By.xpath(".//*[@id='customer_firstname']");
-    By lastName = By.xpath(".//*[@id='customer_lastname']");
+    public By firstName = By.xpath(".//*[@id='customer_firstname']");
+    public By lastName = By.xpath(".//*[@id='customer_lastname']");
     /*By emailId = By.xpath("./*//*[@id='email']");*/
-    By passWord = By.xpath(".//*[@id='passwd']");
-    By days = By.xpath(".//*[@id='days']");
-    By months = By.xpath(".//*[@id='months']");
-    By years = By.xpath(".//*[@id='years']");
-    By addressFirstName = By.xpath(".//*[@id='firstname']");
-    By addressLastName = By.xpath(".//*[@id='lastname']");
-    By address1 = By.xpath(".//*[@id='address1']");
-    By city = By.xpath(".//*[@id='city']");
-    By stateL = By.xpath(".//*[@id='id_state']");
-    By zipCode = By.xpath(".//*[@id='postcode']");
-    By country = By.xpath(".//*[@id='id_country']");
-    By mobileAAddress = By.xpath(".//*[@id='phone_mobile']");
-    By assignAddress = By.xpath(".//*[@id='alias']");
-    By register = By.xpath(".//*[@id='submitAccount']");
+    public By passWord = By.xpath(".//*[@id='passwd']");
+    public By days = By.xpath(".//*[@id='days']");
+    public By months = By.xpath(".//*[@id='months']");
+    public By years = By.xpath(".//*[@id='years']");
+    public By addressFirstName = By.xpath(".//*[@id='firstname']");
+    public By addressLastName = By.xpath(".//*[@id='lastname']");
+    public By address1 = By.xpath(".//*[@id='address1']");
+    public By city = By.xpath(".//*[@id='city']");
+    public By stateL = By.xpath(".//*[@id='id_state']");
+    public By zipCode = By.xpath(".//*[@id='postcode']");
+    public By country = By.xpath(".//*[@id='id_country']");
+    public By mobileAAddress = By.xpath(".//*[@id='phone_mobile']");
+    public By assignAddress = By.xpath(".//*[@id='alias']");
+    public By register = By.xpath(".//*[@id='submitAccount']");
 
 
     public CreateAnAccount(WebDriver driver){
@@ -100,7 +101,7 @@ public class CreateAnAccount {
     public void selectYears(String year)throws InterruptedException{
         logger.info("selecting year from year drop down menu");
         driver.findElement(years);
-
+        Thread.sleep(5000);
         List<WebElement> yearsData = driver.findElements(By.xpath(".//*[@id='years']/option"));
         for (WebElement yr: yearsData) {
             if (yr.getText().trim().equals(year)){
@@ -121,9 +122,9 @@ public class CreateAnAccount {
         logger.info("selecting address");
         driver.findElement(this.address1).sendKeys(address);
     }
-    public void selectCity(String city){
+    public void selectCity(String city)throws InterruptedException{
         logger.info("selecting city");
-        driver.findElement(this.city).sendKeys(city);
+             driver.findElement(this.city).sendKeys(city);
     }
     //.//*[@id='id_state']/option
     public void selectState(String state)throws InterruptedException{
@@ -143,6 +144,7 @@ public class CreateAnAccount {
     }
     public void selectCountry()throws InterruptedException{
         logger.info("selecting country from drop down menu");
+        Thread.sleep(18000);
         driver.findElement(country).click();
         driver.findElement(By.xpath(".//*[@id='id_country']/option[2]")).click();
     }
@@ -154,13 +156,14 @@ public class CreateAnAccount {
         logger.info("selecting address 2");
         driver.findElement(this.assignAddress).sendKeys(address2);
     }
-    public void clickOnRegister(){
+    public void clickOnRegister()throws InterruptedException{
         logger.info("clicking submit button");
         driver.findElement(register).click();
+
     }
     public boolean getRegistrationConfirmedMsg(){
         String msg = driver.findElement(By.xpath(".//*[@id='center_column']/p")).getText();
-        if(msg.contains("Welcome to your account. Here you can manage all of your personal information and orders.")){
+        if(msg.contains("Welcome123 to your account. Here you can manage all of your personal information and orders.")){
             return true;
         }else{
             return false;
@@ -173,7 +176,6 @@ public class CreateAnAccount {
         selectFirstName(firstName);
         selectLastName(lastName);
         selectPassWord(passWord);
-        //Thread.sleep(6000);
         selectDays(day);
         selectMonth(month);
         selectYears(year);

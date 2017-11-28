@@ -1,5 +1,6 @@
 package testscripts;
 
+import com.relevantcodes.extentreports.LogStatus;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -8,13 +9,14 @@ import pagelibrary.CreateAnAccount;
 import pagelibrary.SignIn;
 import testbase.TestBase;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Sharif on 10/25/2017.
  */
 public class TC002_CreateNewAccount extends TestBase {
-    public SignIn signIn;
-    public CreateAnAccount createAnAccount;
+    SignIn signIn;
+    CreateAnAccount createAnAccount;
     String firstName = "David";
     String lastName = "Cameron";
     String password = "admin123";
@@ -22,21 +24,24 @@ public class TC002_CreateNewAccount extends TestBase {
     String day = "10";
     String month = "January";
     String year = "2017";
+    public static int indexSI = 1;
 
     @BeforeClass
     public void setUp() throws IOException{
         init();
         signIn = new SignIn(driver);
         createAnAccount =new CreateAnAccount(driver);
+       /* test = extent.startTest("Login Test", "This test will verify login test");
+
+        test.log(LogStatus.PASS, "Basic set up for test is done");*/
     }
 
     @Test(priority = 1,enabled = true,description = "Test Registration with valid data")
     public void registrationWithValidData() throws InterruptedException{
         signIn.signInForRegistration(emailAddress);
-        explicitWait(driver.findElement(createAnAccount.mrRadioButton),30);
-        //driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+        //explicitWait(driver.findElement(createAnAccount.mrRadioButton),30);
         createAnAccount.userNewAccountRegistration(firstName,lastName,password,day,month,year);
-        waitFor(5);
+        waitFor(2);
         boolean isSuccess = createAnAccount.getRegistrationConfirmedMsg();
         if(isSuccess){
             Assert.assertTrue(true,"Registration test is pass");

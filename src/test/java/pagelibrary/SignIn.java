@@ -3,6 +3,7 @@ package pagelibrary;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import testbase.TestBase;
 
 import java.util.logging.Logger;
@@ -11,8 +12,8 @@ import java.util.logging.Logger;
  * Created by Sharif on 10/20/2017.
  */
 public class SignIn{
-    public WebDriver driver;
-    final static Logger log = Logger.getLogger(SignIn.class.getName());
+    public static WebDriver driver;
+    static Logger log = Logger.getLogger(SignIn.class.getName());
 
     By firstSignIn = By.xpath(".//*[@id='header']/div[2]/div/div/nav/div[1]/a");
     By allreadyRegEmailAddr  = By.xpath(".//*[@id='email']");
@@ -77,6 +78,14 @@ public class SignIn{
         selectCreateAnAccountEmail(emailAddress);
         clickOnCreateAccount();
     }
+
+    public void loginFromExcelDataApplication(String Email, String Password){
+        clickOnSignIn();
+        enterAllReadyRegEmailAddress(Email);
+        enterPassword(Password);
+        clickSubmitButton();
+    }
+
     public void clickOnLogout(){
         try{
             boolean isDisplay = driver.findElement(logOut).isDisplayed();
