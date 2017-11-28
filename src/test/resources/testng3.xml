@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suit From Excel File">
+    <listeners>
+        <listener class-name="customlistener.Listener"></listener>
+    </listeners>
+    <test name="Regression">
+        <classes>
+            <class name="testscripts.TC001_TestLoginThroughDataProvider" />
+        </classes>
+    </test>
+</suite>

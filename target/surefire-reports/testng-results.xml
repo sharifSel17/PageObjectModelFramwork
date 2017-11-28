@@ -1,11 +1,302 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="1" failed="1" ignored="0" total="5" passed="3">
   <reporter-output>
+    <line>
+      <![CDATA[Test started running:TestLoginWithDataProvider at:16]]>
+    </line>
+    <line>
+      <![CDATA[Test started running:TestLoginWithDataProvider at:16]]>
+    </line>
+    <line>
+      <![CDATA[Test started running:TestLoginWithDataProvider at:16]]>
+    </line>
+    <line>
+      <![CDATA[Test started running:TestLoginWithDataProvider at:16]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Users\Sharif\development\PageObjectModelSeleniumFrameWork\src\test\java\screenshots\11-26-2017_22-57-TestLoginWithDataProvider.png><img src=C:\Users\Sharif\development\PageObjectModelSeleniumFrameWork\src\test\java\screenshots\11-26-2017_22-57-TestLoginWithDataProvider.png" alt=""height='100' width='100'/></a><br />]]>
+    </line>
+    <line>
+      <![CDATA[TestLoginWithDataProvider--Test method failed
+]]>
+    </line>
+    <line>
+      <![CDATA[Test started running:TestLoginWithDataProvider at:16]]>
+    </line>
   </reporter-output>
-  <suite name="testbase.TestBase" duration-ms="0" started-at="2017-10-21T03:37:10Z" finished-at="2017-10-21T03:37:10Z">
+  <suite name="Regression Suit From Excel File" duration-ms="393618" started-at="2017-11-27T03:33:45Z" finished-at="2017-11-27T03:40:18Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="0" started-at="2017-10-21T03:37:10Z" finished-at="2017-10-21T03:37:10Z">
-    </test> <!-- Command line test -->
-  </suite> <!-- testbase.TestBase -->
+    <test name="Regression" duration-ms="393618" started-at="2017-11-27T03:33:45Z" finished-at="2017-11-27T03:40:18Z">
+      <class name="testscripts.TC001_TestLoginThroughDataProvider">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:testscripts.TC001_TestLoginThroughDataProvider@3a82f6ef]" name="setUP" is-config="true" duration-ms="130366" started-at="2017-11-26T22:33:45Z" finished-at="2017-11-26T22:35:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="TestLoginWithDataProvider(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testscripts.TC001_TestLoginThroughDataProvider@3a82f6ef]" name="TestLoginWithDataProvider" duration-ms="24752" started-at="2017-11-26T22:35:56Z" data-provider="loginData" finished-at="2017-11-26T22:36:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123456@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test started running:TestLoginWithDataProvider at:16]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TestLoginWithDataProvider -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:testscripts.TC001_TestLoginThroughDataProvider@3a82f6ef]" name="quitBrowser" is-config="true" duration-ms="752" started-at="2017-11-26T22:36:20Z" finished-at="2017-11-26T22:36:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method status="PASS" signature="setUP()[pri:0, instance:testscripts.TC001_TestLoginThroughDataProvider@3a82f6ef]" name="setUP" is-config="true" duration-ms="30511" started-at="2017-11-26T22:36:21Z" finished-at="2017-11-26T22:36:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="TestLoginWithDataProvider(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testscripts.TC001_TestLoginThroughDataProvider@3a82f6ef]" name="TestLoginWithDataProvider" duration-ms="34043" started-at="2017-11-26T22:36:52Z" data-provider="loginData" finished-at="2017-11-26T22:37:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC002]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123456@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test started running:TestLoginWithDataProvider at:16]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TestLoginWithDataProvider -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:testscripts.TC001_TestLoginThroughDataProvider@3a82f6ef]" name="quitBrowser" is-config="true" duration-ms="703" started-at="2017-11-26T22:37:26Z" finished-at="2017-11-26T22:37:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method status="PASS" signature="setUP()[pri:0, instance:testscripts.TC001_TestLoginThroughDataProvider@3a82f6ef]" name="setUP" is-config="true" duration-ms="39179" started-at="2017-11-26T22:37:26Z" finished-at="2017-11-26T22:38:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="SKIP" signature="TestLoginWithDataProvider(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testscripts.TC001_TestLoginThroughDataProvider@3a82f6ef]" name="TestLoginWithDataProvider" duration-ms="0" started-at="2017-11-26T22:38:06Z" data-provider="loginData" finished-at="2017-11-26T22:38:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC003]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123456@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test
+	at testscripts.TC001_TestLoginThroughDataProvider.TestLoginWithDataProvider(TC001_TestLoginThroughDataProvider.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test started running:TestLoginWithDataProvider at:16]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TestLoginWithDataProvider -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:testscripts.TC001_TestLoginThroughDataProvider@3a82f6ef]" name="quitBrowser" is-config="true" duration-ms="713" started-at="2017-11-26T22:38:06Z" finished-at="2017-11-26T22:38:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method status="PASS" signature="setUP()[pri:0, instance:testscripts.TC001_TestLoginThroughDataProvider@3a82f6ef]" name="setUP" is-config="true" duration-ms="50684" started-at="2017-11-26T22:38:06Z" finished-at="2017-11-26T22:38:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="FAIL" signature="TestLoginWithDataProvider(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testscripts.TC001_TestLoginThroughDataProvider@3a82f6ef]" name="TestLoginWithDataProvider" duration-ms="3" started-at="2017-11-26T22:38:57Z" data-provider="loginData" finished-at="2017-11-26T22:38:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC004]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123456@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[L]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test is failed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test is failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at testscripts.TC001_TestLoginThroughDataProvider.TestLoginWithDataProvider(TC001_TestLoginThroughDataProvider.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test started running:TestLoginWithDataProvider at:16]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Users\Sharif\development\PageObjectModelSeleniumFrameWork\src\test\java\screenshots\11-26-2017_22-57-TestLoginWithDataProvider.png><img src=C:\Users\Sharif\development\PageObjectModelSeleniumFrameWork\src\test\java\screenshots\11-26-2017_22-57-TestLoginWithDataProvider.png" alt=""height='100' width='100'/></a><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TestLoginWithDataProvider -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:testscripts.TC001_TestLoginThroughDataProvider@3a82f6ef]" name="quitBrowser" is-config="true" duration-ms="705" started-at="2017-11-26T22:38:58Z" finished-at="2017-11-26T22:38:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method status="PASS" signature="setUP()[pri:0, instance:testscripts.TC001_TestLoginThroughDataProvider@3a82f6ef]" name="setUP" is-config="true" duration-ms="63740" started-at="2017-11-26T22:38:58Z" finished-at="2017-11-26T22:40:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="TestLoginWithDataProvider(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testscripts.TC001_TestLoginThroughDataProvider@3a82f6ef]" name="TestLoginWithDataProvider" duration-ms="15737" started-at="2017-11-26T22:40:02Z" data-provider="loginData" finished-at="2017-11-26T22:40:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC005]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123456@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test started running:TestLoginWithDataProvider at:16]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TestLoginWithDataProvider -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:testscripts.TC001_TestLoginThroughDataProvider@3a82f6ef]" name="quitBrowser" is-config="true" duration-ms="704" started-at="2017-11-26T22:40:18Z" finished-at="2017-11-26T22:40:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- testscripts.TC001_TestLoginThroughDataProvider -->
+    </test> <!-- Regression -->
+  </suite> <!-- Regression Suit From Excel File -->
 </testng-results>
